@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title data-l10n-id="title"></title>
 
     <!-- L20n setup -->
     <link rel="localization" href="locales/manifest.json">
@@ -17,11 +18,6 @@
       // L20n and document.l10n are now available
       document.l10n.ready(function() {
         console.log("Document's context is ready");
-      });
-      document.l10n.addEventListener('error', function(err) {
-        if (err instanceof L20n.Compiler.Error) {
-          // do something
-        }
       });
     </script> 
   </head>
